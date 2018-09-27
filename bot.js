@@ -315,8 +315,6 @@ function play(guild, song) {
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`On.Rz | Owner : SoM .`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
