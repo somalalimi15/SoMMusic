@@ -311,7 +311,12 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`**${song.title}**, is now playing!`);
 }
 
-
+client.on('message', message => {
+    if (message.author.id === client.user.id) return;
+            if (message.content.startsWith(prefix + "SPing")) {
+        message.channel.sendMessage(':ping_pong: Pong! In `' + `${client.ping}` + ' ms`');
+    }
+});
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
