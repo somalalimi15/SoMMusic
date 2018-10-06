@@ -20,7 +20,8 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "S";
+
+
 /////////////////////////
 ////////////////////////
 
@@ -331,7 +332,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`**${song.title}**, is now playing!`);
 }
 
-
+var prefix = "S"
 client.on('message', message => {
    if(!message.channel.guild) return;
 if(message.content.startsWith(prefix = "S")) {
